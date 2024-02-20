@@ -1,4 +1,5 @@
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -17,6 +18,19 @@ module.exports = {
           },
         ],
       },
+    optimization: {
+      minimize: true,
+      minimizer: [new TerserPlugin({
+        terserOptions: {
+          compress: {
+            drop_console: true
+          }
+        }
+      })],
+      splitChunks: {
+        chunks: 'all'
+      }
+    },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'], // Resolve these extensions
       }
