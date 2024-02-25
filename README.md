@@ -12,7 +12,7 @@ Has been tested to work on the following desktop browsers:
 
 ## Installation
 
-Get the latest version from releases. Unzip the folder anywhere you want on your system.
+Get the latest version from [releases](https://github.com/maxisan137/teacher-schedule-extension/releases). Unzip the folder anywhere you want on your system.
 
 In your browser, open the extensions panel and add the extension.
 
