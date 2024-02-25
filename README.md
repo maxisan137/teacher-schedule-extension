@@ -34,9 +34,10 @@ In your browser, open the extensions panel and add the extension.
 
 ## Building from source
 
-To build from source, you need to have Node installed on your system. Clone this repo, navigate to the root directory and build the project with the following command:
+To build from source, you need to have Node installed on your system. Clone this repo, navigate to the root directory and build the project with the following commands:
 
 ```shell
+npm install
 npm run build
 ```
 
