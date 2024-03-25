@@ -14,5 +14,10 @@
       "matches": ["https://dl.tntu.edu.ua/index.php"],
       "js": ["js/contentScript.js"]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{3629f35a-9361-43a7-89c7-1521b3aa8882}"
+    }
+  }
 }
