@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "cpy-cli": "^5.0.0",
     "terser-webpack-plugin": "^5.3.10",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
@@ -7,6 +8,10 @@
     "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "clean": "rm -rf dist/*",
+    "build-assets": "cpy assets/**/* dist/assets/ --parents",
+    "build-js": "webpack --config webpack.config.js",
+    "build-manifest": "cp src/manifest.json dist/",
+    "build": "npm run clean & npm run build-assets & npm run build-js & npm run build-manifest"
   }
 }

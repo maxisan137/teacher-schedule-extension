@@ -3,10 +3,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: 'production',
-    entry: './src/contentScript.ts',
+    entry: './src/ts/contentScript.ts',
     output: {
         filename: 'contentScript.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist/js')
     },
     devtool: false,
     module: {
